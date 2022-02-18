@@ -22,7 +22,7 @@ class MainViewPagerAdapter(fm: FragmentManager) : FragmentPagerAdapter(fm) {
         } else {
             return Etc2Fragment()
         }
-    }ss
+    }ssㄴㄴㅇㄴ
 
 
 }
