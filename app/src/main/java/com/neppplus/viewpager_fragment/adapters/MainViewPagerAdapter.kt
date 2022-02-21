@@ -7,22 +7,18 @@ import com.neppplus.viewpager_fragment.fragments.*
 
 class MainViewPagerAdapter(fm: FragmentManager) : FragmentPagerAdapter(fm) {
     override fun getCount(): Int {
-        return 5
+        return 3
     }
 
     override fun getItem(position: Int): Fragment {
-        if (position == 0) {
-            return NameFragment()
-        } else if (position == 1) {
-            return BirthYearFragment()
-        } else if (position == 2) {
-            return HelloFragment()
-        } else if (position == 3) {
-            return Etc1Fragment()
-        } else {
-            return Etc2Fragment()
+
+        return when(position) {
+            0 -> NameFragment()
+            1 -> BirthYearFragment()
+            else -> HelloFragment()
         }
-    }ssㄴㄴㅇㄴ
+
+    }
 
 
 }
